@@ -2,7 +2,7 @@
 body {
   font-family: 'Roboto'; }
 
-.arrow_down {
+.styles__arrow_down___UAlWq {
   width: 0;
   height: 0;
   border-left: 20px solid transparent;
@@ -12,7 +12,7 @@ body {
   position: absolute;
   bottom: -10px; }
 
-.distribution_channel__button {
+.styles__distribution_channel__button___D9IwZ {
   border-radius: 5px;
   border: 1.5px solid #eeeeee;
   padding: 5px 15px;
@@ -21,7 +21,7 @@ body {
   text-decoration: none;
   color: #181818; }
 
-.distribution_channel__button:focus {
+.styles__distribution_channel__button___D9IwZ:focus {
   outline: none; }
 
 
