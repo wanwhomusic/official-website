@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'normalize.css';
 import './theme/fonts.scss';
 
 import Routes from './routes';
