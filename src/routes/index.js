@@ -8,7 +8,7 @@ import SingleSongPage from '../pages/SingleSongPage';
 
 export default () => {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL + '/'}>
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/music" component={MusicPage} />
