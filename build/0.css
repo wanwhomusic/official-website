@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
+body {
+  font-family: 'Roboto'; }
+
+.arrow_down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #181818;
+  margin-top: 20px;
+  position: absolute;
+  bottom: -10px; }
+
+.distribution_channel__button {
+  border-radius: 5px;
+  border: 1.5px solid #eeeeee;
+  padding: 5px 15px;
+  background-color: white;
+  cursor: pointer;
+  text-decoration: none;
+  color: #181818; }
+
+.distribution_channel__button:focus {
+  outline: none; }
+
+
+/*# sourceMappingURL=0.css.map*/
