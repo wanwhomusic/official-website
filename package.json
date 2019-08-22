@@ -4,7 +4,8 @@
   "description": "WANWHo?'s official website.",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.dev.js"
+    "start": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.dev.js",
+    "build:production": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js"
   },
   "author": "Jawad Sefiani",
   "license": "ISC",
@@ -40,8 +41,13 @@
     "file-loader": "~3.0.1",
     "html-loader": "~0.5.5",
     "html-webpack-plugin": "~3.2.0",
+    "mini-css-extract-plugin": "~0.8.0",
+    "node-sass": "~4.12.0",
     "prettier": "~1.17.0",
+    "sass-loader": "~7.2.0",
     "style-loader": "~0.23.1",
+    "terser-webpack-plugin": "~1.4.1",
+    "url-loader": "~2.1.0",
     "webpack": "~4.30.0",
     "webpack-cli": "~3.3.2",
     "webpack-dev-server": "~3.3.1",
@@ -49,12 +55,10 @@
   },
   "dependencies": {
     "connected-react-router": "~6.4.0",
-    "formik": "~1.5.4",
+    "normalize.css": "~8.0.1",
     "prop-types": "~15.7.2",
-    "ramda": "~0.26.1",
     "react": "~16.8.6",
     "react-dom": "~16.8.6",
-    "react-loadable": "~5.5.0",
     "react-router-dom": "~5.0.0"
   }
 }

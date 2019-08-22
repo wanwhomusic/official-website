@@ -11,6 +11,28 @@ module.exports = merge(common, {
   output: {
     filename: '[name].js',
     chunkFilename: '[name].chunk.js',
+    publicPath: '/',
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(s?)css$/,
+        use: [
+          'style-loader', // 3. Creates style nodes from JS strings
+          {
+            loader: 'css-loader', // 2. Translates CSS into CommonJS
+            options: {
+              modules: true,
+              importLoaders: 2,
+              localIdentName: '[name]__[local]___[hash:base64:5]',
+              sourceMap: true,
+            },
+          },
+
+          'sass-loader', // 1. Compiles Sass to CSS, using Node Sass by default
+        ],
+      },
+    ],
   },
   optimization: {
     splitChunks: {
@@ -27,7 +49,7 @@ module.exports = merge(common, {
   devServer: {
     contentBase: path.join(__dirname, 'src'),
     compress: true,
-    port: 8000,
+    port: 8080,
     historyApiFallback: true,
     overlay: true,
   },
